@@ -3,190 +3,504 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bravon Hills Investment CC - Export, catering, cosmetics, beauty products, supply and delivery services in Namibia.">
-  <meta name="keywords" content="Bravon Hills Investment CC, Namibia, export, catering, cosmetics, beauty products, supply and delivery">
+
+  <meta name="description" content="Bravon Hills Investment CC - Export, catering, cosmetics and beauty products, supply and delivery services in Windhoek, Namibia.">
+  <meta name="keywords" content="Bravon Hills Investment CC, Windhoek, Namibia, export, catering, cosmetics, beauty products, supply and delivery">
   <meta name="author" content="Bravon Hills Investment CC">
 
-  <title>Bravon Hills Investment CC</title>
+  <title>Bravon Hills Investment CC | Windhoek, Namibia</title>
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #ffffff;
       line-height: 1.6;
-      color: #333;
-      background: #fff;
     }
 
+    /* HEADER */
     header {
-      background: linear-gradient(135deg, #111, #8b6508);
-      color: white;
-      padding: 20px;
       position: sticky;
       top: 0;
       z-index: 1000;
+      background: #111111;
+      border-bottom: 3px solid #d4af37;
     }
 
-    .nav {
-      max-width: 1100px;
+    .nav-container {
+      max-width: 1150px;
       margin: auto;
+      padding: 15px 20px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 20px;
     }
 
-    .logo {
-      font-size: 22px;
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-symbol {
+      width: 45px;
+      height: 45px;
+      border: 2px solid #d4af37;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d4af37;
       font-weight: bold;
+      font-size: 18px;
+    }
+
+    .brand-text h1 {
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .brand-text span {
+      color: #d4af37;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
     }
 
     nav a {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
-      margin-left: 15px;
       font-size: 14px;
+      font-weight: bold;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #d4af37;
     }
 
+    /* HERO */
     .hero {
-      min-height: 85vh;
+      min-height: 88vh;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-                  linear-gradient(135deg, #222, #b8860b);
       color: white;
+      padding: 60px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
+        linear-gradient(135deg, #1b1b1b, #8b6b18, #111111);
     }
 
     .hero-content {
-      max-width: 800px;
+      max-width: 850px;
     }
 
-    .hero h1 {
-      font-size: 45px;
-      margin-bottom: 15px;
+    .hero-badge {
+      display: inline-block;
+      border: 1px solid #d4af37;
+      color: #d4af37;
+      padding: 7px 16px;
+      border-radius: 30px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .hero h2 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 span {
+      color: #d4af37;
     }
 
     .hero p {
-      font-size: 19px;
-      margin-bottom: 25px;
+      font-size: 18px;
+      max-width: 720px;
+      margin: 0 auto 30px;
+      color: #eeeeee;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .button {
       display: inline-block;
-      background: #d4af37;
-      color: #111;
-      padding: 13px 25px;
+      padding: 13px 24px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
-      margin: 5px;
+      transition: 0.3s;
     }
 
+    .gold-button {
+      background: #d4af37;
+      color: #111111;
+    }
+
+    .gold-button:hover {
+      background: #ffffff;
+    }
+
+    .outline-button {
+      border: 1px solid #d4af37;
+      color: #ffffff;
+    }
+
+    .outline-button:hover {
+      background: #d4af37;
+      color: #111111;
+    }
+
+    /* GENERAL */
     section {
-      padding: 70px 20px;
+      padding: 80px 20px;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1150px;
       margin: auto;
     }
 
-    .section-title {
+    .section-heading {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 45px;
     }
 
-    .section-title h2 {
-      font-size: 32px;
+    .section-heading small {
+      color: #a17c16;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+      font-size: 36px;
+      margin: 8px 0 12px;
+      color: #171717;
+    }
+
+    .section-heading p {
+      max-width: 700px;
+      margin: auto;
+      color: #666666;
+    }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: #111111;
+      color: white;
+      padding: 40px;
+      border-radius: 12px;
+      border-left: 5px solid #d4af37;
+    }
+
+    .about-box h3 {
+      color: #d4af37;
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+      color: #555555;
+    }
+
+    .highlight {
       color: #8b6508;
-      margin-bottom: 10px;
+      font-weight: bold;
     }
 
-    .about {
-      text-align: center;
-      max-width: 850px;
-      margin: auto;
-      font-size: 17px;
-    }
-
+    /* SERVICES */
     .services {
       background: #f7f7f7;
     }
 
     .service-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
-    .service {
-      background: white;
-      padding: 30px 20px;
+    .service-card {
+      background: #ffffff;
+      padding: 30px 22px;
       border-radius: 10px;
       text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+      border-top: 4px solid #d4af37;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+      transition: transform 0.3s;
     }
 
-    .service h3 {
-      color: #8b6508;
-      margin-bottom: 10px;
+    .service-card:hover {
+      transform: translateY(-6px);
     }
 
     .service-icon {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 15px;
     }
 
-    .contact {
-      background: #111;
-      color: white;
-      text-align: center;
+    .service-card h3 {
+      color: #8b6508;
+      margin-bottom: 12px;
+      font-size: 20px;
     }
 
-    .contact h2 {
-      color: #d4af37;
-    }
-
-    .contact p {
-      margin: 10px 0;
-    }
-
-    footer {
-      background: #050505;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
+    .service-card p {
+      color: #666666;
       font-size: 14px;
     }
 
-    @media (max-width: 700px) {
-      .nav {
+    /* BUSINESS ACTIVITIES */
+    .activities {
+      background: #111111;
+      color: white;
+    }
+
+    .activities .section-heading h2 {
+      color: white;
+    }
+
+    .activities .section-heading p {
+      color: #cccccc;
+    }
+
+    .activity-list {
+      max-width: 850px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .activity-item {
+      border: 1px solid #444444;
+      padding: 18px;
+      border-radius: 8px;
+      background: #181818;
+    }
+
+    .activity-item span {
+      color: #d4af37;
+      margin-right: 8px;
+    }
+
+    /* GALLERY */
+    .gallery {
+      background: #ffffff;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-card {
+      min-height: 210px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #222222, #8b6508);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px;
+      color: white;
+    }
+
+    .gallery-card h3 {
+      color: #d4af37;
+      margin-bottom: 8px;
+    }
+
+    .gallery-card p {
+      font-size: 14px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #f7f7f7;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .contact-card {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 10px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+    }
+
+    .contact-card h3 {
+      color: #8b6508;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .contact-item {
+      margin: 15px 0;
+      font-size: 16px;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: #333333;
+    }
+
+    .contact-item a {
+      color: #8b6508;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-cta {
+      background: #111111;
+      color: white;
+      padding: 35px;
+      border-radius: 10px;
+    }
+
+    .contact-cta h3 {
+      color: #d4af37;
+      margin-bottom: 15px;
+    }
+
+    .contact-cta p {
+      color: #dddddd;
+      margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #050505;
+      color: #bbbbbb;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer strong {
+      color: #d4af37;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    /* WHATSAPP FLOATING BUTTON */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+      z-index: 999;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* MOBILE */
+    @media (max-width: 900px) {
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .nav-container {
         flex-direction: column;
       }
 
-      nav a {
-        margin: 5px;
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
       }
 
-      .hero h1 {
-        font-size: 34px;
+      .brand-text h1 {
+        font-size: 16px;
+      }
+
+      .hero {
+        min-height: 80vh;
+      }
+
+      .hero h2 {
+        font-size: 40px;
       }
 
       .hero p {
         font-size: 16px;
+      }
+
+      .service-grid,
+      .gallery-grid,
+      .activity-list {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 60px 18px;
+      }
+
+      .about-box,
+      .contact-card,
+      .contact-cta {
+        padding: 25px;
       }
     }
   </style>
@@ -194,145 +508,381 @@
 
 <body>
 
-<header>
-  <div class="nav">
-    <div class="logo">BRAVON HILLS INVESTMENT CC</div>
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+      <a href="#home" class="brand">
+        <div class="brand-symbol">BH</div>
 
-<section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Bravon Hills Investment CC</h1>
-
-    <p>
-      Quality Business Solutions in Export, Catering,
-      Cosmetics, Beauty Products, Supply & Delivery.
-    </p>
-
-    <a href="#services" class="button">Our Services</a>
-    <a href="#contact" class="button">Contact Us</a>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container">
-    <div class="section-title">
-      <h2>About Us</h2>
-    </div>
-
-    <div class="about">
-      <p>
-        Bravon Hills Investment CC is a diversified business committed
-        to providing reliable products and services to customers and
-        business partners.
-      </p>
-
-      <br>
-
-      <p>
-        Our registered principal business activities include export,
-        catering, cosmetics and beauty industry, as well as the supply
-        and delivery of beauty products.
-      </p>
-
-      <br>
-
-      <p>
-        We aim to provide professional, dependable and customer-focused
-        services while building lasting business relationships.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="services" id="services">
-  <div class="container">
-
-    <div class="section-title">
-      <h2>Our Services</h2>
-      <p>What we offer</p>
-    </div>
-
-    <div class="service-grid">
-
-      <div class="service">
-        <div class="service-icon">🌍</div>
-        <h3>Export</h3>
-        <p>
-          Export-related business activities and services,
-          connecting products with wider markets.
-        </p>
-      </div>
-
-      <div class="service">
-        <div class="service-icon">🍽️</div>
-        <h3>Catering</h3>
-        <p>
-          Catering services designed to meet the needs of
-          individuals, events and businesses.
-        </p>
-      </div>
-
-      <div class="service">
-        <div class="service-icon">💄</div>
-        <h3>Cosmetics & Beauty</h3>
-        <p>
-          Beauty and cosmetic products selected to support
-          personal care and beauty needs.
-        </p>
-      </div>
-
-      <div class="service">
-        <div class="service-icon">📦</div>
-        <h3>Supply & Delivery</h3>
-        <p>
-          Supply and delivery of beauty products and other
-          approved business products.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact Us</h2>
-      </div>
-
-      <p><strong>Bravon Hills Investment CC</strong></p>
-
-      <p>📍 Namibia</p>
-
-      <p>📞 Contact us for enquiries and orders</p>
-
-      <p>📧 Email: Contact details to be added</p>
-
-      <br>
-
-      <a href="mailto:YOUR-EMAIL@example.com" class="button">
-        Email Us
+        <div class="brand-text">
+          <h1>BRAVON HILLS</h1>
+          <span>INVESTMENT CC</span>
+        </div>
       </a>
 
-    </div>
-  </div>
-</section>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-<footer>
-  <p>
-    © 2026 Bravon Hills Investment CC. All Rights Reserved.
-  </p>
-</footer>
+    </div>
+  </header>
+
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        Windhoek • Namibia
+      </div>
+
+      <h2>
+        BRAVON HILLS<br>
+        <span>INVESTMENT CC</span>
+      </h2>
+
+      <p>
+        A diversified Namibian business providing services and products
+        across export, catering, cosmetics, beauty, supply and delivery.
+      </p>
+
+      <div class="buttons">
+        <a href="#services" class="button gold-button">
+          Explore Our Services
+        </a>
+
+        <a href="#contact" class="button outline-button">
+          Contact Us
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+
+      <div class="section-heading">
+        <small>Who We Are</small>
+        <h2>About Bravon Hills</h2>
+        <p>
+          Building reliable business relationships through quality
+          products and professional services.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-text">
+          <p>
+            <span class="highlight">Bravon Hills Investment CC</span>
+            is a diversified business based in Windhoek, Namibia.
+          </p>
+
+          <p>
+            The company operates across several areas, including
+            export, catering, cosmetics and beauty, as well as the
+            supply and delivery of beauty products.
+          </p>
+
+          <p>
+            Our focus is on providing dependable services and products
+            while building strong and lasting relationships with our
+            customers and business partners.
+          </p>
+
+          <p>
+            We are committed to professional service, reliability and
+            customer satisfaction.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>Our Business</h3>
+
+          <p>
+            We provide a range of business activities designed to serve
+            individual customers, organisations and business partners.
+          </p>
+
+          <br>
+
+          <p>
+            <strong>Location:</strong> Windhoek, Namibia
+          </p>
+
+          <p>
+            <strong>Business:</strong> Bravon Hills Investment CC
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="section-heading">
+        <small>What We Do</small>
+        <h2>Our Services</h2>
+        <p>
+          Explore the principal areas of business offered by
+          Bravon Hills Investment CC.
+        </p>
+      </div>
+
+      <div class="service-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🌍</div>
+          <h3>Export</h3>
+          <p>
+            Export-related business activities and services
+            connecting products with wider markets.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🍽️</div>
+          <h3>Catering</h3>
+          <p>
+            Catering services for individuals, events,
+            organisations and businesses.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">💄</div>
+          <h3>Cosmetics & Beauty</h3>
+          <p>
+            Cosmetics and beauty products for personal
+            care and beauty needs.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📦</div>
+          <h3>Supply & Delivery</h3>
+          <p>
+            Supply and delivery of beauty products and
+            other approved business products.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BUSINESS ACTIVITIES -->
+  <section class="activities">
+    <div class="container">
+
+      <div class="section-heading">
+        <small>Our Business Areas</small>
+        <h2>Principal Business Activities</h2>
+        <p>
+          Our business activities include the following areas.
+        </p>
+      </div>
+
+      <div class="activity-list">
+
+        <div class="activity-item">
+          <span>✓</span> Export
+        </div>
+
+        <div class="activity-item">
+          <span>✓</span> Catering
+        </div>
+
+        <div class="activity-item">
+          <span>✓</span> Cosmetics Industry
+        </div>
+
+        <div class="activity-item">
+          <span>✓</span> Beauty Industry
+        </div>
+
+        <div class="activity-item">
+          <span>✓</span> Supply of Beauty Products
+        </div>
+
+        <div class="activity-item">
+          <span>✓</span> Delivery of Beauty Products
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+
+      <div class="section-heading">
+        <small>Our Business</small>
+        <h2>Gallery</h2>
+        <p>
+          A glimpse into the products and services of
+          Bravon Hills Investment CC.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-card">
+          <div>
+            <h3>Beauty Products</h3>
+            <p>
+              Cosmetics and beauty products.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div>
+            <h3>Catering</h3>
+            <p>
+              Catering and event services.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <div>
+            <h3>Supply & Delivery</h3>
+            <p>
+              Reliable supply and delivery services.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <div class="section-heading">
+        <small>Get In Touch</small>
+        <h2>Contact Us</h2>
+        <p>
+          Contact Bravon Hills Investment CC for enquiries,
+          products and services.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+
+          <h3>Business Information</h3>
+
+          <div class="contact-item">
+            <strong>Business Name</strong>
+            Bravon Hills Investment CC
+          </div>
+
+          <div class="contact-item">
+            <strong>Location</strong>
+            Windhoek, Namibia
+          </div>
+
+          <div class="contact-item">
+            <strong>Phone</strong>
+            <a href="tel:+264813074275">
+              +264 81 307 4275
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <strong>Email</strong>
+            <a href="mailto:bravonhills@gmail.com">
+              bravonhills@gmail.com
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="contact-cta">
+
+          <h3>Let's Do Business</h3>
+
+          <p>
+            Have an enquiry about our services or products?
+            Get in touch with Bravon Hills Investment CC.
+          </p>
+
+          <a
+            href="https://wa.me/264813074275?text=Hello%20Bravon%20Hills%20Investment%20CC,%20I%20would%20like%20to%20make%20an%20enquiry."
+            class="button gold-button"
+            target="_blank"
+          >
+            WhatsApp Us
+          </a>
+
+          <a
+            href="mailto:bravonhills@gmail.com"
+            class="button outline-button"
+          >
+            Send Email
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      <strong>BRAVON HILLS INVESTMENT CC</strong>
+    </p>
+
+    <p>
+      Export • Catering • Cosmetics & Beauty • Supply & Delivery
+    </p>
+
+    <p>
+      Windhoek, Namibia
+    </p>
+
+    <p>
+      © 2026 Bravon Hills Investment CC. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a
+    href="https://wa.me/264813074275?text=Hello%20Bravon%20Hills%20Investment%20CC,%20I%20would%20like%20to%20make%20an%20enquiry."
+    class="whatsapp"
+    target="_blank"
+    aria-label="Contact Bravon Hills Investment CC on WhatsApp"
+    title="Chat on WhatsApp"
+  >
+    ☎
+  </a>
 
 </body>
-      </html>
+</html>
